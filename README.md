@@ -1,28 +1,59 @@
-## Usage
+# Done Documentation Site
+
+Welcome to the documentation website for [Done](https://github.com/dnl-fm/done), the simple message queue for Deno Deploy.
+
+## 🚀 Features
+
+- **Welcoming Homepage** - Clear introduction to Done with key benefits
+- **Interactive Getting Started Guide** - Step-by-step setup with storage backend selection
+- **Why Done? Page** - Comparison with traditional message queues
+- **Live Code Examples** - Interactive examples in multiple programming languages
+- **Complete API Reference** - Comprehensive documentation for all endpoints and headers
+- **Responsive Design** - Works great on all devices
+
+## 🛠️ Tech Stack
+
+- **Framework**: SolidJS
+- **Build Tool**: Vite
+- **Runtime**: Deno
+- **Styling**: Custom CSS with modern design system
+- **Routing**: @solidjs/router
+
+## 📦 Development
 
 ```bash
-$ npm install # or pnpm install or yarn install
+# Clone the repository
+git clone https://github.com/dnl-fm/donemq.com.git
+cd donemq.com
+
+# Install dependencies
+deno install
+
+# Start development server
+deno task dev
 ```
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+## 🌐 Deployment
 
-## Available Scripts
+This site is designed to be deployed on Deno Deploy:
 
-In the project directory, you can run:
+1. Push your changes to GitHub
+2. Connect the repository to Deno Deploy
+3. Set the entry point to the build output
+4. Deploy!
 
-### `npm run dev`
+## 📄 Pages
 
-Runs the app in the development mode.<br>
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+- **Home** (`/`) - Introduction and key features
+- **Getting Started** (`/getting-started`) - Setup guide with Turso/Deno KV options
+- **Why Done?** (`/why-done`) - Benefits and use cases
+- **Examples** (`/examples`) - Code examples for common scenarios
+- **API Reference** (`/api`) - Complete technical documentation
 
-### `npm run build`
+## 🤝 Contributing
 
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
+Feel free to submit issues and pull requests to improve the documentation!
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## 📝 License
 
-## Deployment
-
-Learn more about deploying your application with the [documentations](https://vite.dev/guide/static-deploy.html)
+This documentation site is open source and available under the same license as Done.
