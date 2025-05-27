@@ -931,13 +931,12 @@ body {
 }
 
 .example-header {
-  padding: 2rem;
-  border-bottom: 1px solid var(--border);
+  padding: 2rem 2rem 1rem;
 }
 
 .example-header h2 {
-  font-size: 1.75rem;
-  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  margin: 0 0 0.75rem;
   color: var(--text-primary);
 }
 
@@ -949,6 +948,7 @@ body {
 
 .code-container {
   background: var(--text-primary);
+  margin-top: 2rem;
 }
 
 .code-header {
@@ -1000,25 +1000,38 @@ body {
 }
 
 .example-notes {
-  padding: 2rem;
-  background: var(--bg-light);
+  padding: 0 2rem 1.5rem;
 }
 
 .example-notes h3 {
-  font-size: 1.25rem;
-  margin: 0 0 1rem;
-  color: var(--text-primary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .example-notes ul {
   margin: 0;
-  padding-left: 1.5rem;
+  padding-left: 0;
+  list-style: none;
 }
 
 .example-notes li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   color: var(--text-secondary);
   line-height: 1.6;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.example-notes li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
 }
 
 .example-notes code {

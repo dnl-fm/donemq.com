@@ -406,19 +406,6 @@ func processBatchHandler(w http.ResponseWriter, r *http.Request) {
               <p>{currentExample().description}</p>
             </div>
 
-            <div class="code-container">
-              <div class="code-header">
-                <span class="language-badge">{currentExample().language}</span>
-                <button class="copy-button" onClick={() => {
-                  navigator.clipboard.writeText(currentExample().code);
-                  alert('Code copied to clipboard!');
-                }}>
-                  Copy Code
-                </button>
-              </div>
-              <pre class="code-block"><code>{currentExample().code}</code></pre>
-            </div>
-
             <div class="example-notes">
               <h3>Key Points</h3>
               {selectedExample() === "welcome-email" && (
@@ -463,6 +450,19 @@ func processBatchHandler(w http.ResponseWriter, r *http.Request) {
                   <li>Failed batches don't affect others</li>
                 </ul>
               )}
+            </div>
+
+            <div class="code-container">
+              <div class="code-header">
+                <span class="language-badge">{currentExample().language}</span>
+                <button class="copy-button" onClick={() => {
+                  navigator.clipboard.writeText(currentExample().code);
+                  alert('Code copied to clipboard!');
+                }}>
+                  Copy Code
+                </button>
+              </div>
+              <pre class="code-block"><code>{currentExample().code}</code></pre>
             </div>
           </div>
         </div>
