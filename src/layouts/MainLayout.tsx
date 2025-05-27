@@ -1,4 +1,4 @@
-import { Component, JSX } from "solid-js";
+import type { Component, JSX } from "solid-js";
 import Navigation from "../components/Navigation";
 
 interface MainLayoutProps {
